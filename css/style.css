@@ -161,6 +161,12 @@ margin-right: 25px;
   letter-spacing: 2px;
   color: #ffffff;
 }
+.header-link:hover {
+  color: #9D8665;
+}
+.header-link:active {
+  color: #7E6C51;
+}
 .welcom__section__wrapper {
   background-image: url('../assets/img/welcom/1.png');
   background-repeat: no-repeat;
@@ -202,6 +208,9 @@ margin-right: 25px;
   margin-top: 75px;
   margin-bottom: 272px;
   margin-left: 0;
+}
+.welcom__button:hover {
+  background: #9D8665;
 }
 /* visiting */
 .virtual {
@@ -462,8 +471,11 @@ margin-left: 10px;
     justify-content: center;
     align-items: center;    
     letter-spacing: 2px;
-    color: #ffffff;
-    
+    color: #ffffff;    
+  }
+  .buying__amount input:hover {
+    background: #9D8665;
+    color: #000000;
   }
  /* contact */
  .contact__wrapper {
