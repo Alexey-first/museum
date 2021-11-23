@@ -179,12 +179,40 @@ margin-right: 25px;
 }
 .welcom__slider {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-self: flex-end;
   background-color: #030303;
   width: 600px;
   height: 120px;
+}
+.welcom__slider_pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+  margin-right: 60px;
+}
+.welcom__slider_pagination img {
+  margin-right: 25px;
+}
+.welcom__slider_pagination img:active {
+  background: #D2B183;
+}
+.welcom__slider_date {
+  margin: 40px 55px 40px 74px;;
+}
+.welcom__slider_arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  margin-right: 75px;
+}
+.welcom__slider_arrows button {
+  background: #030303;
+  border: none;
+}
+.welcom__slider_arrows button:hover {
+  color: #9D8665;
 }
 .welcom__content_text {
   font-size: 28px;
