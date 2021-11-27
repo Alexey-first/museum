@@ -51,8 +51,12 @@ body {
 }
 .wrapper {
   margin: 0 auto;  
-  max-width: 1440px;
-  width: 100%;
+  max-width: 1440px;  
+}
+@media screen and (max-width: 1024px) {   
+  .wrapper {  
+  padding: 0 20px;  
+  }
 }
 h1 {
   font-family: "Forum", sans-serif;
@@ -108,7 +112,7 @@ hr {
 .header__wraper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
 .header-logo {
   display: flex;
@@ -117,6 +121,11 @@ hr {
 }
 .header {
   padding: 59px 0 58px 0; 
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 49px 0 48px 0;
+  }  
 }
 .header-text {  
 font-family: Forum;
@@ -142,10 +151,16 @@ margin-right: 25px;
 }
 .header-nav {
   display: flex;
-  margin: 0;   
+  margin: 0;  
+}
+@media screen and (max-width: 1024px) {
+  .header-nav {
+    display: none;
+  }
 }
 .navigation {
   display: flex;
+ 
 }
 .header-item {    
   list-style: none;
@@ -167,6 +182,54 @@ margin-right: 25px;
 .header-link:active {
   color: #7E6C51;
 }
+.hamburger {
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 18px;
+   
+}
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 32px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+}
+.hamburger::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 32px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  right: 0;
+}
+
+.hamburger__line {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 32px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  top: calc(50% - 1px);
+  right: 0;  
+}
+/* welcom */
+
 .welcom__section__wrapper {
   background-image: url('../assets/img/welcom/1.png');
   background-repeat: no-repeat;
@@ -189,7 +252,7 @@ margin-right: 25px;
 .welcom__slider_pagination {
   display: flex;
   justify-content: space-between;
-  max-width: 180px;
+  width: 180px;
   margin-right: 60px;
 }
 .welcom__slider_pagination img {
