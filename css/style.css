@@ -723,18 +723,26 @@ margin-left: 10px;
  }
  .buying {
    display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-
- }
- .ticket__type {
+   /* justify-content: space-between;
+   flex-wrap: wrap; */
+ } 
+ .ticket__type fieldset {
    display: flex;
    flex-direction: column;
+   border: none;
+   padding: 0 235px 0 60px;
  } 
  @media screen and (max-width: 1024px) {
   .ticket__type {
     display: none;
   }
+}
+.ticket__type legend {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 50px;
+  padding: 0;
 }
  .radio {
    display: flex;
@@ -744,9 +752,9 @@ margin-left: 10px;
  .radio input {
    margin-right: 23px;
  }
- .ticket__type h4 {
-   margin-bottom: 50px;
- }
+ /* input[type="radio"]:checked {
+   background-color: #000000;
+ } */ 
  .buying img {
    margin-bottom: 75px;
  }
@@ -829,7 +837,8 @@ margin-left: 10px;
     justify-content: center;
     align-items: center;    
     letter-spacing: 2px;
-    color: #ffffff;    
+    color: #ffffff;
+        
   }
   .buying__amount input:hover {
     background: #9D8665;

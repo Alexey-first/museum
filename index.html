@@ -214,20 +214,27 @@
                <div class="buying">
                     <img src="./assets/img/tickets/back1.png" alt="back">
                     <form action="#" class="ticket__type">
-                        <h4>Ticket Type</h4>
+                        <fieldset>
+                            <legend>Ticket Type</legend>                            
                         <div class="radio">
-                            <input type="radio" name="exhibition" id="permanent">
-                            <label for="permanent">Permanent exhibition</label>
+                            <label>
+                            <input type="radio" name="exhibition" value="permanent">
+                            Permanent exhibition
+                        </label>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="exhibition" id="temporary">
-                        <label for="temporary">Temporary exhibition</label>
+                            <label>
+                            <input type="radio" name="exhibition" value="temporary">
+                            Temporary exhibition
+                        </label>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="exhibition" id="combined">
-                            <label for="combined">Combined Admission</label>
-                        </div>       
-                                              
+                            <label>
+                                <input type="radio" name="exhibition" value="combined">
+                            Combined Admission
+                            </label>
+                        </div>                  
+                        </fieldset>                             
                     </form>
                     <div class="buying__amount">
                         <h4>Amount</h4>
