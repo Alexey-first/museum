@@ -511,8 +511,9 @@ margin-right: 25px;
  
 } 
 @media screen and (max-width: 1024px) {
-  .visit {     
-     margin: 0 54px;    
+  .visit {
+    flex: 1 1 auto;     
+     margin: 0 54px;         
   }    
 }
 @media screen and (max-width: 768px) {
@@ -851,7 +852,7 @@ margin-left: 10px;
  .buying img {
    width: 700px;
    height: 440px;
-   margin: 0 0 60px;
+   margin: 0 80px 60px 0;
  }
 }
 @media screen and (max-width: 768px) {
@@ -1060,10 +1061,26 @@ margin-left: 10px;
 }
 
  /* footer */
-
+ .footer__logo {
+   display: flex;
+ }
+ .footer__logo img {
+   width: 49px;
+   align-self: flex-start;
+   margin-right: 25px;
+ }
+ .footer__logo span {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+ }
  .footer__escape_up {
    display: flex;   
-   justify-content: space-between;
+   justify-content: space-between; 
    align-items: center;
    padding: 84px 0  50px;
  } 
@@ -1075,6 +1092,7 @@ margin-left: 10px;
 @media screen and (max-width: 768px) {
   .footer__escape_up {
     flex-wrap: wrap;
+    padding: 40px 0;
   }
 }
  .footer__nav a {
@@ -1082,10 +1100,15 @@ margin-left: 10px;
  }
  .footer__nav {
    display: flex;   
-   justify-content: space-between;
-   width: 363px;
+   /* justify-content: space-between; */
+   max-width: 363px;
    height: 128px;          
  } 
+ @media screen and (max-width: 1024px) {
+  .footer__nav {
+    margin-right: 92px;
+  }
+}
  .footer__nav ul {
    padding: 0;
  }
@@ -1106,8 +1129,36 @@ margin-left: 10px;
     margin: 0 100px 0 45px;
   }
 }
+@media screen and (max-width: 768px) {
+  .navigation__footer_1 {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation__footer {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .footer__social {
+  display: flex;
   align-self: end;
+ }
+ @media screen and (max-width: 1024px) {
+  .footer__social {
+    margin-left: 92px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__social {
+    margin: 50px 0 0 298px;
+  }
+}
+ .footer__social a {
+  margin-right: 25px;
+ }
+ .footer__social a:last-child {
+   margin-right: 0;
  }
  .footer hr {
    max-width: 1920px;
@@ -1116,7 +1167,7 @@ margin-left: 10px;
  }
  @media screen and (max-width: 1024px) {
   .footer hr {
-    margin: 0 0 50px;;
+    margin: 0;
   }
 } 
  .last-string {
@@ -1127,7 +1178,12 @@ margin-left: 10px;
  }
  @media screen and (max-width: 1024px) {
   .last-string {
-    padding-bottom: 50px;
+    padding: 50px;
+  }
+} 
+@media screen and (max-width: 768px) {
+  .last-string {    
+    padding: 40px 0;
   }
 } 
 .last-string p {
